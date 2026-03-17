@@ -27,6 +27,24 @@
             <artifactId>playwright</artifactId>
             <version>1.41.0</version>
         </dependency>	
+        <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.15.0</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit-platform-engine</artifactId>
+    <version>7.15.0</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>org.junit.platform</groupId>
+    <artifactId>junit-platform-suite</artifactId>
+    <version>1.10.1</version>
+    <scope>test</scope>
+</dependency>
     </dependencies>
 
     <build>
@@ -37,6 +55,9 @@
                     <exclude>**/*.java</exclude>
                 </excludes>
             </testResource>
+             <testResource>
+        <directory>src/test/resources</directory>
+    </testResource>
         </testResources>
         <plugins>
             <plugin>
