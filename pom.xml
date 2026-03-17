@@ -21,7 +21,12 @@
             <artifactId>karate-junit5</artifactId>
             <version>${karate.version}</version>
             <scope>test</scope>
-        </dependency>		
+        </dependency>	
+        <dependency>
+            <groupId>com.microsoft.playwright</groupId>
+            <artifactId>playwright</artifactId>
+            <version>1.41.0</version>
+        </dependency>	
     </dependencies>
 
     <build>
@@ -53,6 +58,5 @@
                 </configuration>
             </plugin>          
         </plugins>        
-    </build>       
-    
+    </build>    
 </project>
