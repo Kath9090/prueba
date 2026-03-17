@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="features.lobby.LobbyRunner" time="12.725" tests="12" errors="0" skipped="0" failures="8">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Automatización\Karate DSL\target\test-classes;C:\Automatización\Karate DSL\target\classes;C:\Users\extdev01\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\extdev01\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\extdev01\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\extdev01\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\extdev01\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\extdev01\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\extdev01\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\extdev01\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\extdev01\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\extdev01\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\extdev01\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\extdev01\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\extdev01\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\extdev01\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\extdev01\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\extdev01\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\extdev01\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\extdev01\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\extdev01\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\extdev01\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\extdev01\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\extdev01\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\extdev01\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\extdev01\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\extdev01\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\extdev01\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\extdev01\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\extdev01\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\extdev01\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\extdev01\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\extdev01\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\extdev01\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\extdev01\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\extdev01\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\extdev01\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\extdev01\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\extdev01\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\extdev01\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\extdev01\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\extdev01\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\extdev01\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\extdev01\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\extdev01\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\extdev01\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\extdev01\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\extdev01\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Lima"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PE"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\extdev01\AppData\Local\Temp\surefire12840820174642729021\surefirebooter-20260312175537910_3.jar C:\Users\extdev01\AppData\Local\Temp\surefire12840820174642729021 2026-03-12T17-55-37_417-jvmRun1 surefire-20260312175537910_1tmp surefire_0-20260312175537910_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="features.lobby.LobbyRunner"/>
+    <property name="surefire.test.class.path" value="C:\Automatización\Karate DSL\target\test-classes;C:\Automatización\Karate DSL\target\classes;C:\Users\extdev01\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\extdev01\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\extdev01\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\extdev01\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\extdev01\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\extdev01\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\extdev01\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\extdev01\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\extdev01\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\extdev01\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\extdev01\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\extdev01\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\extdev01\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\extdev01\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\extdev01\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\extdev01\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\extdev01\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\extdev01\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\extdev01\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\extdev01\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\extdev01\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\extdev01\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\extdev01\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\extdev01\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\extdev01\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\extdev01\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\extdev01\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\extdev01\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\extdev01\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\extdev01\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\extdev01\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\extdev01\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\extdev01\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\extdev01\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\extdev01\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\extdev01\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\extdev01\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\extdev01\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\extdev01\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\extdev01\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\extdev01\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\extdev01\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\extdev01\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\extdev01\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\extdev01\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\extdev01\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\extdev01\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\extdev01\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\extdev01"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Automatización\Karate DSL"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\extdev01\AppData\Local\Temp\surefire12840820174642729021\surefirebooter-20260312175537910_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
+    <property name="user.name" value="extdev01"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\extdev01\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\extdev01\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Automatización\Karate DSL"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\extdev01\AppData\Local\Programs\Microsoft VS Code;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\apache-maven-3.9.12-bin\apache-maven-3.9.12\bin;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\ProgramData\chocolatey\bin;C:\Users\Administrador\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\extdev01\Documents\Programas\apache-maven-3.9.9-bin.zip\apache-maven-3.9.9\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\nodejs\;C:\Users\extdev01\AppData\Local\Microsoft\WindowsApps;C:\Users\extdev01\AppData\Local\Python\bin;C:\Users\extdev01\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\extdev01\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.12+8-LTS-286"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="[1.1:22] Validar que el campo lobby es obligatorio" classname="features/lobby/ListarProveedores" time="2.961">
+    <system-out><![CDATA[17:55:40.332 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:55:41.955 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:55:42.591 [main] DEBUG com.intuit.karate - request:
+1 > POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev/lobbies/filter
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 12
+1 > Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"lobby":""}
+
+17:55:43.271 [main] DEBUG com.intuit.karate - response time in milliseconds: 680
+1 < 400
+1 < Content-Type: application/json
+1 < Content-Length: 49
+1 < Connection: keep-alive
+1 < Date: Thu, 12 Mar 2026 22:55:43 GMT
+1 < X-Amzn-Trace-Id: Root=1-69b3446f-3547e85e490748ff43cd259d;Parent=256310c157fcf51e;Sampled=0;Lineage=1:84ac5540:0
+1 < x-amzn-RequestId: e6a60cf2-2aa1-441b-b792-b5988b53fc10
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Headers: *
+1 < x-amz-apigw-id: aIehfEN1PHcEGMg=
+1 < Access-Control-Allow-Methods: OPTIONS,POST
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 348d7c18d8ac60e3b6b1679992a9f608.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: LIM50-P4
+1 < X-Amz-Cf-Id: 6Kqrrdl3f5iZ6aCJk_iZP--jTI-ygM33_jMfiPke8VjC4ZvnTRSvTA==
+{"message":"El parámetro 'lobby' no es válido"}
+
+]]></system-out>
+  </testcase>
+  <testcase name="[1.2:23] Validar que el campo lobby es obligatorio" classname="features/lobby/ListarProveedores" time="0.637">
+    <system-out><![CDATA[17:55:43.351 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:55:43.362 [main] DEBUG com.intuit.karate - request:
+1 > POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev/lobbies/filter
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 14
+1 > Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"lobby":null}
+
+17:55:43.960 [main] DEBUG com.intuit.karate - response time in milliseconds: 598
+1 < 400
+1 < Content-Type: application/json
+1 < Content-Length: 47
+1 < Connection: keep-alive
+1 < Date: Thu, 12 Mar 2026 22:55:44 GMT
+1 < X-Amzn-Trace-Id: Root=1-69b34470-0666434539535cea5fd612eb;Parent=5d802936f313b8ca;Sampled=0;Lineage=1:84ac5540:0
+1 < x-amzn-RequestId: 6962ccd4-d965-4a9b-9ce6-498a0fb0c450
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Headers: *
+1 < x-amz-apigw-id: aIehnHyUvHcEWrw=
+1 < Access-Control-Allow-Methods: OPTIONS,POST
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 2420b43d96bd040d43ee898a9214ab8a.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: LIM50-P4
+1 < X-Amz-Cf-Id: _0uMboUwTtvaegEe49786WfNBOCnvJCNGtpYPGe9WIGUh_WupnZhYg==
+{"message":"Completar los campos obligatorios"}
+
+]]></system-out>
+  </testcase>
+  <testcase name="[2:26] Validar respuesta exitosa cuando el lobby es válido" classname="features/lobby/ListarProveedores" time="1.024">
+    <system-out><![CDATA[17:55:43.983 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:55:43.986 [main] DEBUG com.intuit.karate - request:
+1 > POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev/lobbies/filter
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 42
+1 > Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"lobby":"Lobby Todos Los Juegos Desktop"}
+
+17:55:44.966 [main] DEBUG com.intuit.karate - response time in milliseconds: 977
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 7602
+1 < Connection: keep-alive
+1 < Date: Thu, 12 Mar 2026 22:55:45 GMT
+1 < X-Amzn-Trace-Id: Root=1-69b34471-00c010d76da3ffcd4c381351;Parent=02a29514af2ea9e4;Sampled=0;Lineage=1:84ac5540:0
+1 < x-amzn-RequestId: 96912749-cd07-433f-b569-4d35bdfb097f
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Headers: *
+1 < x-amz-apigw-id: aIehuHMpvHcEPfw=
+1 < Access-Control-Allow-Methods: OPTIONS,POST
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 3e07b77de077db959f12788b2ecb8914.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: LIM50-P4
+1 < X-Amz-Cf-Id: EodpwIZesfP2UVhm43vjZYbLCAFX1b6q3ne93AeAQoLSMXTh_ddDEw==
+{"success":true,"message":"Success","data":[{"key":"paymentMechanics","type":"multiselect","order":1,"items":[{"key":"OPT_game_type_anywhere","value":"Anywhere","enabled":true},{"key":"OPT_game_type_normal","value":"Normal","enabled":true},{"key":"OPT_game_type_ways_megaways","value":"Ways Megaways","enabled":true},{"key":"OPT_game_type_cluster","value":"Cluster","enabled":true},{"key":"OPT_game_type_crash","value":"Crash","enabled":true},{"key":"OPT_game_type_table_games","value":"Table Games","enabled":true},{"key":"OPT_game_type_insta_win","value":"Insta Win","enabled":true},{"key":"OPT_game_type_bingoslot","value":"Bingoslot","enabled":true}]},{"key":"providers","type":"multiselect","order":2,"items":[{"key":"CT Interactive","value":"CT Interactive","enabled":true},{"key":"Pragmatic","value":"Pragmatic","enabled":true},{"key":"Red Tiger","value":"Red Tiger","enabled":true},{"key":"Bragg (Oryx)","value":"Bragg (Oryx)","enabled":true},{"key":"Nolimit city","value":"Nolimit city","enabled":true},{"key":"Amusnet","value":"Amusnet","enabled":true},{"key":"Big Time Gaming","value":"Big Time Gaming","enabled":true},{"key":"Playtech","value":"Playtech","enabled":true},{"key":"Greentube","value":"Greentube","enabled":true},{"key":"NetEnt","value":"NetEnt","enabled":true},{"key":"Evolution","value":"Evolution","enabled":true},{"key":"Games Global (Microgaming)","value":"Games Global (Microgaming)","enabled":true},{"key":"Zitro","value":"Zitro","enabled":true},{"key":"Wazdan","value":"Wazdan","enabled":true},{"key":"Synot","value":"Synot","enabled":true},{"key":"Ezugi","value":"Ezugi","enabled":true},{"key":"Endorphina","value":"Endorphina","enabled":true},{"key":"Hacksaw","value":"Hacksaw","enabled":true},{"key":"Playson","value":"Playson","enabled":true},{"key":"Spribe","value":"Spribe","enabled":true},{"key":"Platipus","value":"Platipus","enabled":true},{"key":"Gamomat","value":"Gamomat","enabled":true},{"key":"BGaming","value":"BGaming","enabled":true},{"key":"1x2 Gaming","value":"1x2 Gaming","enabled":true},{"key":"Habanero","value":"Habanero","enabled":true},{"key":"Booming Games","value":"Booming Games","enabled":true},{"key":"Play Digital IGT","value":"Play Digital IGT","enabled":true},{"key":"7777 Gaming","value":"7777 Gaming","enabled":true},{"key":"RubyPlay","value":"RubyPlay","enabled":true},{"key":"3 Oaks","value":"3 Oaks","enabled":true}]},{"key":"jackpotTypes","type":"multiselect","order":3,"items":[{"key":"OPT_jackpot_type_compartido","value":"Compartido","enabled":true},{"key":"OPT_jackpot_type_standalone","value":"Standalone","enabled":true},{"key":"OPT_jackpot_type_compartido_mundial","value":"Compartido Mundial","enabled":true},{"key":"OPT_jackpot_type_compartido_juego","value":"Compartido Juego","enabled":true}]},{"key":"attractions","type":"multiselect","order":4,"items":[{"key":"OPT_atraccion_risk_gamble","value":"Risk Gamble","enabled":true},{"key":"OPT_atraccion_Symbol_Multipliers","value":"Symbol Multipliers","enabled":true},{"key":"OPT_atraccion_compra_atraccion","value":"Compra Atraccion","enabled":true},{"key":"OPT_atraccion_expanding_wild","value":"Expanding Wild","enabled":true},{"key":"OPT_atraccion_random_wilds","value":"Random Wilds","enabled":true},{"key":"OPT_atraccion_wild_multiplicador","value":"Wild Multiplicador","enabled":true},{"key":"OPT_atraccion_simbolos_stack","value":"Simbolos Stack","enabled":true},{"key":"OPT_atraccion_collect","value":"Collect","enabled":true},{"key":"OPT_atraccion_respin","value":"Respin","enabled":true},{"key":"OPT_atraccion_sticky_wild","value":"Sticky Wild","enabled":true},{"key":"OPT_atraccion_multiple_grids","value":"Multiple Grids","enabled":true},{"key":"OPT_atraccion_apuesta_aumentada","value":"Apuesta Aumentada","enabled":true},{"key":"OPT_atraccion_cascada","value":"Cascada","enabled":true},{"key":"OPT_atraccion_colossal_symbols","value":"Colossal Symbols","enabled":true},{"key":"OPT_atraccion_Mystery_Symbols","value":"Mystery Symbols","enabled":true},{"key":"OPT_atraccion_increasing_multipliers","value":"Increasing Multipliers","enabled":true},{"key":"OPT_atraccion_hold_and_win","value":"Hold And Win","enabled":true},{"key":"OPT_atraccion_roaming_wilds","value":"Roaming Wilds","enabled":true},{"key":"OPT_atraccion_expanding_symbol","value":"Expanding Symbol","enabled":true},{"key":"OPT_atraccion_progressive_free_spins","value":"Progressive Free Spins","enabled":true},{"key":"OPT_atraccion_simbolos_altos","value":"Simbolos Altos","enabled":true},{"key":"OPT_atraccion_pago_ambos_sentidos","value":"Pago Ambos Sentidos","enabled":true},{"key":"OPT_atraccion_Expanding_Reels","value":"Expanding Reels","enabled":true},{"key":"OPT_atraccion_wheel_of_fortune","value":"Wheel Of Fortune","enabled":true},{"key":"OPT_atraccion_Compra_Super_Bonus","value":"Compra Super Bonus","enabled":true},{"key":"OPT_atraccion_Feature_Spin","value":"Feature Spin","enabled":true},{"key":"OPT_atraccion_up_symbol","value":"Up Symbol","enabled":true},{"key":"OPT_atraccion_progressive_wilds","value":"Progressive Wilds","enabled":true},{"key":"OPT_atraccion_wild_reel_unlock","value":"Wild Reel Unlock","enabled":true}]},{"key":"themes","type":"multiselect","order":5,"items":[{"key":"OPT_theme_animales","value":"Animales","enabled":true},{"key":"OPT_theme_aventura","value":"Aventura","enabled":true},{"key":"OPT_theme_oriental","value":"Oriental","enabled":true},{"key":"OPT_theme_historicos","value":"Historicos","enabled":true},{"key":"OPT_theme_mitologia","value":"Mitologia","enabled":true},{"key":"OPT_theme_vaquero","value":"Vaquero","enabled":true},{"key":"OPT_theme_buffalo","value":"Buffalo","enabled":true},{"key":"OPT_theme_frutas","value":"Frutas","enabled":true},{"key":"OPT_theme_festividades","value":"Festividades","enabled":true},{"key":"OPT_theme_gemas","value":"Gemas","enabled":true},{"key":"OPT_theme_dioses","value":"Dioses","enabled":true},{"key":"OPT_theme_terror","value":"Terror","enabled":true},{"key":"OPT_theme_dulce","value":"Dulce","enabled":true},{"key":"OPT_theme_egipto","value":"Egipto","enabled":true},{"key":"OPT_theme_tesoros","value":"Tesoros","enabled":true},{"key":"OPT_theme_fiesta","value":"Fiesta","enabled":true},{"key":"OPT_theme_dragones","value":"Dragones","enabled":true},{"key":"OPT_theme_magia","value":"Magia","enabled":true},{"key":"OPT_theme_irlandes","value":"Irlandes","enabled":true},{"key":"OPT_theme_joker","value":"Joker","enabled":true},{"key":"OPT_theme_deportes","value":"Deportes","enabled":true},{"key":"OPT_theme_casino_clasico","value":"Casino Clasico","enabled":true},{"key":"OPT_theme_pesca","value":"Pesca","enabled":true},{"key":"OPT_theme_espacial","value":"Espacial","enabled":true},{"key":"OPT_theme_tierno","value":"Tierno","enabled":true},{"key":"OPT_theme_mina","value":"Mina","enabled":true},{"key":"OPT_theme_animados","value":"Animados","enabled":true},{"key":"OPT_theme_piratas","value":"Piratas","enabled":true},{"key":"OPT_theme_batallas","value":"Batallas","enabled":true},{"key":"OPT_theme_dados","value":"Dados","enabled":true},{"key":"OPT_theme_futuro","value":"Futuro","enabled":true},{"key":"OPT_theme_policias","value":"Policias","enabled":true},{"key":"OPT_theme_arcade","value":"Arcade","enabled":true}]},{"key":"bettingRange","type":"range","order":6,"items":{"min":0.02,"max":15000}},{"key":"volatilities","type":"multiselect","order":7,"items":[{"key":"OPT_vol_high","value":"High","enabled":true},{"key":"OPT_vol_medium","value":"Medium","enabled":true},{"key":"OPT_vol_very_high","value":"Very High","enabled":true},{"key":"OPT_vol_low","value":"Low","enabled":true}]}]}
+
+]]></system-out>
+  </testcase>
+  <testcase name="[3:40] Validar tiempo de respuesta menor o igual a 3 segundos" classname="features/lobby/ListarProveedores" time="0.887">
+    <system-out><![CDATA[17:55:45.002 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:55:45.009 [main] DEBUG com.intuit.karate - request:
+1 > POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev/lobbies/filter
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 42
+1 > Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"lobby":"Lobby Todos Los Juegos Desktop"}
+
+17:55:45.871 [main] DEBUG com.intuit.karate - response time in milliseconds: 860
+1 < 200
+1 < Content-Type: application/json
+1 < Content-Length: 7602
+1 < Connection: keep-alive
+1 < Date: Thu, 12 Mar 2026 22:55:46 GMT
+1 < X-Amzn-Trace-Id: Root=1-69b34472-7bf2bf3b6bf172e25ac9a037;Parent=4d018cb392fe23f6;Sampled=0;Lineage=1:84ac5540:0
+1 < x-amzn-RequestId: d81a997d-884d-44bb-903f-3306de033717
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Headers: *
+1 < x-amz-apigw-id: aIeh4GebPHcEMyg=
+1 < Access-Control-Allow-Methods: OPTIONS,POST
+1 < X-Cache: Miss from cloudfront
+1 < Via: 1.1 eec3bf841ac636f9a2400eb19e13aac0.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: LIM50-P4
+1 < X-Amz-Cf-Id: 74rTU7unNhw3VnDLzm5XhFJjFsLx4BunyE5f5P50j6jZSX05LCPSmw==
+{"success":true,"message":"Success","data":[{"key":"paymentMechanics","type":"multiselect","order":1,"items":[{"key":"OPT_game_type_anywhere","value":"Anywhere","enabled":true},{"key":"OPT_game_type_normal","value":"Normal","enabled":true},{"key":"OPT_game_type_ways_megaways","value":"Ways Megaways","enabled":true},{"key":"OPT_game_type_cluster","value":"Cluster","enabled":true},{"key":"OPT_game_type_crash","value":"Crash","enabled":true},{"key":"OPT_game_type_table_games","value":"Table Games","enabled":true},{"key":"OPT_game_type_insta_win","value":"Insta Win","enabled":true},{"key":"OPT_game_type_bingoslot","value":"Bingoslot","enabled":true}]},{"key":"providers","type":"multiselect","order":2,"items":[{"key":"CT Interactive","value":"CT Interactive","enabled":true},{"key":"Pragmatic","value":"Pragmatic","enabled":true},{"key":"Red Tiger","value":"Red Tiger","enabled":true},{"key":"Bragg (Oryx)","value":"Bragg (Oryx)","enabled":true},{"key":"Nolimit city","value":"Nolimit city","enabled":true},{"key":"Amusnet","value":"Amusnet","enabled":true},{"key":"Big Time Gaming","value":"Big Time Gaming","enabled":true},{"key":"Playtech","value":"Playtech","enabled":true},{"key":"Greentube","value":"Greentube","enabled":true},{"key":"NetEnt","value":"NetEnt","enabled":true},{"key":"Evolution","value":"Evolution","enabled":true},{"key":"Games Global (Microgaming)","value":"Games Global (Microgaming)","enabled":true},{"key":"Zitro","value":"Zitro","enabled":true},{"key":"Wazdan","value":"Wazdan","enabled":true},{"key":"Synot","value":"Synot","enabled":true},{"key":"Ezugi","value":"Ezugi","enabled":true},{"key":"Endorphina","value":"Endorphina","enabled":true},{"key":"Hacksaw","value":"Hacksaw","enabled":true},{"key":"Playson","value":"Playson","enabled":true},{"key":"Spribe","value":"Spribe","enabled":true},{"key":"Platipus","value":"Platipus","enabled":true},{"key":"Gamomat","value":"Gamomat","enabled":true},{"key":"BGaming","value":"BGaming","enabled":true},{"key":"1x2 Gaming","value":"1x2 Gaming","enabled":true},{"key":"Habanero","value":"Habanero","enabled":true},{"key":"Booming Games","value":"Booming Games","enabled":true},{"key":"Play Digital IGT","value":"Play Digital IGT","enabled":true},{"key":"7777 Gaming","value":"7777 Gaming","enabled":true},{"key":"RubyPlay","value":"RubyPlay","enabled":true},{"key":"3 Oaks","value":"3 Oaks","enabled":true}]},{"key":"jackpotTypes","type":"multiselect","order":3,"items":[{"key":"OPT_jackpot_type_compartido","value":"Compartido","enabled":true},{"key":"OPT_jackpot_type_standalone","value":"Standalone","enabled":true},{"key":"OPT_jackpot_type_compartido_mundial","value":"Compartido Mundial","enabled":true},{"key":"OPT_jackpot_type_compartido_juego","value":"Compartido Juego","enabled":true}]},{"key":"attractions","type":"multiselect","order":4,"items":[{"key":"OPT_atraccion_risk_gamble","value":"Risk Gamble","enabled":true},{"key":"OPT_atraccion_Symbol_Multipliers","value":"Symbol Multipliers","enabled":true},{"key":"OPT_atraccion_compra_atraccion","value":"Compra Atraccion","enabled":true},{"key":"OPT_atraccion_expanding_wild","value":"Expanding Wild","enabled":true},{"key":"OPT_atraccion_random_wilds","value":"Random Wilds","enabled":true},{"key":"OPT_atraccion_wild_multiplicador","value":"Wild Multiplicador","enabled":true},{"key":"OPT_atraccion_simbolos_stack","value":"Simbolos Stack","enabled":true},{"key":"OPT_atraccion_collect","value":"Collect","enabled":true},{"key":"OPT_atraccion_respin","value":"Respin","enabled":true},{"key":"OPT_atraccion_sticky_wild","value":"Sticky Wild","enabled":true},{"key":"OPT_atraccion_multiple_grids","value":"Multiple Grids","enabled":true},{"key":"OPT_atraccion_apuesta_aumentada","value":"Apuesta Aumentada","enabled":true},{"key":"OPT_atraccion_cascada","value":"Cascada","enabled":true},{"key":"OPT_atraccion_colossal_symbols","value":"Colossal Symbols","enabled":true},{"key":"OPT_atraccion_Mystery_Symbols","value":"Mystery Symbols","enabled":true},{"key":"OPT_atraccion_increasing_multipliers","value":"Increasing Multipliers","enabled":true},{"key":"OPT_atraccion_hold_and_win","value":"Hold And Win","enabled":true},{"key":"OPT_atraccion_roaming_wilds","value":"Roaming Wilds","enabled":true},{"key":"OPT_atraccion_expanding_symbol","value":"Expanding Symbol","enabled":true},{"key":"OPT_atraccion_progressive_free_spins","value":"Progressive Free Spins","enabled":true},{"key":"OPT_atraccion_simbolos_altos","value":"Simbolos Altos","enabled":true},{"key":"OPT_atraccion_pago_ambos_sentidos","value":"Pago Ambos Sentidos","enabled":true},{"key":"OPT_atraccion_Expanding_Reels","value":"Expanding Reels","enabled":true},{"key":"OPT_atraccion_wheel_of_fortune","value":"Wheel Of Fortune","enabled":true},{"key":"OPT_atraccion_Compra_Super_Bonus","value":"Compra Super Bonus","enabled":true},{"key":"OPT_atraccion_Feature_Spin","value":"Feature Spin","enabled":true},{"key":"OPT_atraccion_up_symbol","value":"Up Symbol","enabled":true},{"key":"OPT_atraccion_progressive_wilds","value":"Progressive Wilds","enabled":true},{"key":"OPT_atraccion_wild_reel_unlock","value":"Wild Reel Unlock","enabled":true}]},{"key":"themes","type":"multiselect","order":5,"items":[{"key":"OPT_theme_animales","value":"Animales","enabled":true},{"key":"OPT_theme_aventura","value":"Aventura","enabled":true},{"key":"OPT_theme_oriental","value":"Oriental","enabled":true},{"key":"OPT_theme_historicos","value":"Historicos","enabled":true},{"key":"OPT_theme_mitologia","value":"Mitologia","enabled":true},{"key":"OPT_theme_vaquero","value":"Vaquero","enabled":true},{"key":"OPT_theme_buffalo","value":"Buffalo","enabled":true},{"key":"OPT_theme_frutas","value":"Frutas","enabled":true},{"key":"OPT_theme_festividades","value":"Festividades","enabled":true},{"key":"OPT_theme_gemas","value":"Gemas","enabled":true},{"key":"OPT_theme_dioses","value":"Dioses","enabled":true},{"key":"OPT_theme_terror","value":"Terror","enabled":true},{"key":"OPT_theme_dulce","value":"Dulce","enabled":true},{"key":"OPT_theme_egipto","value":"Egipto","enabled":true},{"key":"OPT_theme_tesoros","value":"Tesoros","enabled":true},{"key":"OPT_theme_fiesta","value":"Fiesta","enabled":true},{"key":"OPT_theme_dragones","value":"Dragones","enabled":true},{"key":"OPT_theme_magia","value":"Magia","enabled":true},{"key":"OPT_theme_irlandes","value":"Irlandes","enabled":true},{"key":"OPT_theme_joker","value":"Joker","enabled":true},{"key":"OPT_theme_deportes","value":"Deportes","enabled":true},{"key":"OPT_theme_casino_clasico","value":"Casino Clasico","enabled":true},{"key":"OPT_theme_pesca","value":"Pesca","enabled":true},{"key":"OPT_theme_espacial","value":"Espacial","enabled":true},{"key":"OPT_theme_tierno","value":"Tierno","enabled":true},{"key":"OPT_theme_mina","value":"Mina","enabled":true},{"key":"OPT_theme_animados","value":"Animados","enabled":true},{"key":"OPT_theme_piratas","value":"Piratas","enabled":true},{"key":"OPT_theme_batallas","value":"Batallas","enabled":true},{"key":"OPT_theme_dados","value":"Dados","enabled":true},{"key":"OPT_theme_futuro","value":"Futuro","enabled":true},{"key":"OPT_theme_policias","value":"Policias","enabled":true},{"key":"OPT_theme_arcade","value":"Arcade","enabled":true}]},{"key":"bettingRange","type":"range","order":6,"items":{"min":0.02,"max":15000}},{"key":"volatilities","type":"multiselect","order":7,"items":[{"key":"OPT_vol_high","value":"High","enabled":true},{"key":"OPT_vol_medium","value":"Medium","enabled":true},{"key":"OPT_vol_very_high","value":"Very High","enabled":true},{"key":"OPT_vol_low","value":"Low","enabled":true}]}]}
+
+]]></system-out>
+  </testcase>
+  <testcase name="[4.1:78] [102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente" classname="features/lobby/ListarProveedores" time="0.27">
+    <failure message="status code was: 403, expected: 200, response time in milliseconds: 236, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: &#10;{&quot;message&quot;:&quot;Missing Authentication Token&quot;}&#10;classpath:features/lobby/ListarProveedores.feature:64" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 403, expected: 200, response time in milliseconds: 236, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[17:55:45.894 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:55:45.899 [main] DEBUG com.intuit.karate - request:
+1 > POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 42
+1 > Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"lobby":"Lobby Todos Los Juegos Desktop"}
+
+17:55:46.136 [main] DEBUG com.intuit.karate - response time in milliseconds: 236
+1 < 403
+1 < Content-Type: application/json
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Date: Thu, 12 Mar 2026 22:55:46 GMT
+1 < x-amz-apigw-id: aIeh9ExEvHcEipw=
+1 < x-amzn-RequestId: c0490ced-7231-4ca6-9dff-858b97143c94
+1 < x-amzn-ErrorType: MissingAuthenticationTokenException
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 91618874d64f6094c008a8273d1ad22a.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: LIM50-P4
+1 < X-Amz-Cf-Id: iq-nDxhRnIFdgEuGxpaw2DqAU0REngLsRjC1I9yQx7vAnLaQbebHvQ==
+{"message":"Missing Authentication Token"}
+
+17:55:46.156 [main] ERROR com.intuit.karate - classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 236, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+]]></system-out>
+  </testcase>
+  <testcase name="[4.2:79] [102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente" classname="features/lobby/ListarProveedores" time="0.247">
+    <failure message="status code was: 403, expected: 200, response time in milliseconds: 233, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: &#10;{&quot;message&quot;:&quot;Missing Authentication Token&quot;}&#10;classpath:features/lobby/ListarProveedores.feature:64" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 403, expected: 200, response time in milliseconds: 233, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[17:55:46.182 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:55:46.190 [main] DEBUG com.intuit.karate - request:
+1 > POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"lobby":"Lobby Progresivos Desktop"}
+
+17:55:46.424 [main] DEBUG com.intuit.karate - response time in milliseconds: 233
+1 < 403
+1 < Content-Type: application/json
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Date: Thu, 12 Mar 2026 22:55:46 GMT
+1 < x-amz-apigw-id: aIeiAFRPPHcEpEA=
+1 < x-amzn-RequestId: 2ecdd8d2-a543-4c7c-9bde-70577cbd5f74
+1 < x-amzn-ErrorType: MissingAuthenticationTokenException
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 4828f70366d72db0b523f619bb7738fc.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: LIM50-P4
+1 < X-Amz-Cf-Id: EGAhjHMqVFopMVD5_Ij1PxCBZhzrIMz5jhtLo9K1mG0Fj9iBjKwD3g==
+{"message":"Missing Authentication Token"}
+
+17:55:46.424 [main] ERROR com.intuit.karate - classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 233, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+]]></system-out>
+  </testcase>
+  <testcase name="[4.3:80] [102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente" classname="features/lobby/ListarProveedores" time="0.607">
+    <failure message="status code was: 403, expected: 200, response time in milliseconds: 580, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: &#10;{&quot;message&quot;:&quot;Missing Authentication Token&quot;}&#10;classpath:features/lobby/ListarProveedores.feature:64" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 403, expected: 200, response time in milliseconds: 580, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[17:55:46.437 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:55:46.444 [main] DEBUG com.intuit.karate - request:
+1 > POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"lobby":"Lobby Clasicas Desktop"}
+
+17:55:47.024 [main] DEBUG com.intuit.karate - response time in milliseconds: 580
+1 < 403
+1 < Content-Type: application/json
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Date: Thu, 12 Mar 2026 22:55:47 GMT
+1 < x-amz-apigw-id: aIeiGHPovHcEq7w=
+1 < x-amzn-RequestId: cd498c2e-a54b-4a02-b980-f9f7f5801f2d
+1 < x-amzn-ErrorType: MissingAuthenticationTokenException
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 4b41c6e76d8872ab0e8baee30184397a.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: LIM50-P4
+1 < X-Amz-Cf-Id: k8_QdWeNYZkcNBnO5gBP6iNS2kYhOUDttNkK8B9plca-PFZOh1NuaA==
+{"message":"Missing Authentication Token"}
+
+17:55:47.030 [main] ERROR com.intuit.karate - classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 580, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+]]></system-out>
+  </testcase>
+  <testcase name="[4.4:81] [102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente" classname="features/lobby/ListarProveedores" time="0.609">
+    <failure message="status code was: 403, expected: 200, response time in milliseconds: 596, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: &#10;{&quot;message&quot;:&quot;Missing Authentication Token&quot;}&#10;classpath:features/lobby/ListarProveedores.feature:64" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 403, expected: 200, response time in milliseconds: 596, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[17:55:47.038 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:55:47.041 [main] DEBUG com.intuit.karate - request:
+1 > POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 38
+1 > Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"lobby":"Lobby Compra Bonus Desktop"}
+
+17:55:47.637 [main] DEBUG com.intuit.karate - response time in milliseconds: 596
+1 < 403
+1 < Content-Type: application/json
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Date: Thu, 12 Mar 2026 22:55:48 GMT
+1 < x-amz-apigw-id: aIeiMG4QPHcEJUA=
+1 < x-amzn-RequestId: 6259e322-68aa-4db7-9d71-a961b32f1abe
+1 < x-amzn-ErrorType: MissingAuthenticationTokenException
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 1a8f4e7ec86ac95ada5cd8e1bafd669e.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: LIM50-P4
+1 < X-Amz-Cf-Id: owNChcDObRsBq9zF4g-IFjg7FtJSiJ8NS_KEinrTuUPdSGSMOI5e-w==
+{"message":"Missing Authentication Token"}
+
+17:55:47.638 [main] ERROR com.intuit.karate - classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 596, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+]]></system-out>
+  </testcase>
+  <testcase name="[4.5:82] [102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente" classname="features/lobby/ListarProveedores" time="0.622">
+    <failure message="status code was: 403, expected: 200, response time in milliseconds: 613, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: &#10;{&quot;message&quot;:&quot;Missing Authentication Token&quot;}&#10;classpath:features/lobby/ListarProveedores.feature:64" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 403, expected: 200, response time in milliseconds: 613, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[17:55:47.646 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:55:47.649 [main] DEBUG com.intuit.karate - request:
+1 > POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 38
+1 > Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"lobby":"Lobby High Rollers Desktop"}
+
+17:55:48.264 [main] DEBUG com.intuit.karate - response time in milliseconds: 613
+1 < 403
+1 < Content-Type: application/json
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Date: Thu, 12 Mar 2026 22:55:48 GMT
+1 < x-amz-apigw-id: aIeiSHIiPHcEUOg=
+1 < x-amzn-RequestId: 7eb534eb-0d05-4f21-aa8a-27f2f4e2d272
+1 < x-amzn-ErrorType: MissingAuthenticationTokenException
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 08a337d4c41835bb1a388ee0311fd0aa.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: LIM50-P4
+1 < X-Amz-Cf-Id: WMiWjQrbpuDnjRU-PuULWkmTIUJXxigYhkSRzm43f39GafNuiGthHg==
+{"message":"Missing Authentication Token"}
+
+17:55:48.264 [main] ERROR com.intuit.karate - classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 613, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+]]></system-out>
+  </testcase>
+  <testcase name="[4.6:83] [102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente" classname="features/lobby/ListarProveedores" time="0.615">
+    <failure message="status code was: 403, expected: 200, response time in milliseconds: 611, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: &#10;{&quot;message&quot;:&quot;Missing Authentication Token&quot;}&#10;classpath:features/lobby/ListarProveedores.feature:64" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 403, expected: 200, response time in milliseconds: 611, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[17:55:48.271 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:55:48.271 [main] DEBUG com.intuit.karate - request:
+1 > POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 39
+1 > Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"lobby":"Lobby Nuevos Juegos Desktop"}
+
+17:55:48.886 [main] DEBUG com.intuit.karate - response time in milliseconds: 611
+1 < 403
+1 < Content-Type: application/json
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Date: Thu, 12 Mar 2026 22:55:49 GMT
+1 < x-amz-apigw-id: aIeiZECGPHcEcmw=
+1 < x-amzn-RequestId: d8f1a756-3e9f-425f-a0e1-03eb46a2d3d8
+1 < x-amzn-ErrorType: MissingAuthenticationTokenException
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 abf583d7b5055f9a34a4ee0458154026.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: LIM50-P4
+1 < X-Amz-Cf-Id: 0vFwwowKiR-QNsdZOqpS_dGzw0xy8zhRMEAeqCn2fwPadZlAZpV9Yg==
+{"message":"Missing Authentication Token"}
+
+17:55:48.886 [main] ERROR com.intuit.karate - classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 611, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+]]></system-out>
+  </testcase>
+  <testcase name="[4.7:84] [102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente" classname="features/lobby/ListarProveedores" time="0.608">
+    <failure message="status code was: 403, expected: 200, response time in milliseconds: 588, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: &#10;{&quot;message&quot;:&quot;Missing Authentication Token&quot;}&#10;classpath:features/lobby/ListarProveedores.feature:64" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 403, expected: 200, response time in milliseconds: 588, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[17:55:48.896 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:55:48.898 [main] DEBUG com.intuit.karate - request:
+1 > POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 37
+1 > Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"lobby":"Lobby Mas Jugados Desktop"}
+
+17:55:49.488 [main] DEBUG com.intuit.karate - response time in milliseconds: 588
+1 < 403
+1 < Content-Type: application/json
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Date: Thu, 12 Mar 2026 22:55:49 GMT
+1 < x-amz-apigw-id: aIeifFhePHcEMHA=
+1 < x-amzn-RequestId: 20927228-ec51-4f65-b43d-3f8b295673a9
+1 < x-amzn-ErrorType: MissingAuthenticationTokenException
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 37a8e7c8f6e0ef373feaddfdb44a7d14.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: LIM50-P4
+1 < X-Amz-Cf-Id: yJd0H-lTu70fksdR0S586Js-nsFNK99xVH_wSBYU4X2-o_dqAeeGSw==
+{"message":"Missing Authentication Token"}
+
+17:55:49.491 [main] ERROR com.intuit.karate - classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 588, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+]]></system-out>
+  </testcase>
+  <testcase name="[4.8:85] [102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente" classname="features/lobby/ListarProveedores" time="2.184">
+    <failure message="status code was: 403, expected: 200, response time in milliseconds: 581, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: &#10;{&quot;message&quot;:&quot;Missing Authentication Token&quot;}&#10;classpath:features/lobby/ListarProveedores.feature:64" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 403, expected: 200, response time in milliseconds: 581, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[17:55:49.495 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:55:49.504 [main] DEBUG com.intuit.karate - request:
+1 > POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 23
+1 > Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"lobby":"cineDesktop"}
+
+17:55:50.086 [main] DEBUG com.intuit.karate - response time in milliseconds: 581
+1 < 403
+1 < Content-Type: application/json
+1 < Content-Length: 42
+1 < Connection: keep-alive
+1 < Date: Thu, 12 Mar 2026 22:55:50 GMT
+1 < x-amz-apigw-id: aIeilELXvHcEP8w=
+1 < x-amzn-RequestId: 1c7030d7-803b-40f3-9f23-16fc005d7af2
+1 < x-amzn-ErrorType: MissingAuthenticationTokenException
+1 < X-Cache: Error from cloudfront
+1 < Via: 1.1 ac7fd017999b6d571e9b83857fbce978.cloudfront.net (CloudFront)
+1 < X-Amz-Cf-Pop: LIM50-P4
+1 < X-Amz-Cf-Id: 2ynJnEcPmF0gtt_RCxEvTShlubtoQ3Y5pw81m1Dwd_ljEVS9OOn8zg==
+{"message":"Missing Authentication Token"}
+
+17:55:50.086 [main] ERROR com.intuit.karate - classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 581, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+---------------------------------------------------------
+feature: classpath:features/lobby/ListarProveedores.feature
+scenarios: 12 | passed:  4 | failed:  8 | time: 7.9141
+---------------------------------------------------------
+
+Karate version: 1.5.0
+======================================================
+elapsed:  11.14 | threads:    1 | thread time: 7.91 
+features:     1 | skipped:    0 | efficiency: 0.71
+scenarios:   12 | passed:     4 | failed: 8
+======================================================
+>>> failed features:
+status code was: 403, expected: 200, response time in milliseconds: 236, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+status code was: 403, expected: 200, response time in milliseconds: 233, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+status code was: 403, expected: 200, response time in milliseconds: 580, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+status code was: 403, expected: 200, response time in milliseconds: 596, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+status code was: 403, expected: 200, response time in milliseconds: 613, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+status code was: 403, expected: 200, response time in milliseconds: 611, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+status code was: 403, expected: 200, response time in milliseconds: 588, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+status code was: 403, expected: 200, response time in milliseconds: 581, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{"message":"Missing Authentication Token"}
+classpath:features/lobby/ListarProveedores.feature:64
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0
+file:///C:/Automatización/Karate%20DSL/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

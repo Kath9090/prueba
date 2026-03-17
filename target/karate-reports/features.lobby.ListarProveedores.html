@@ -1,0 +1,4432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"1c0331e8-fd6d-479c-969e-c405e882517b",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.lobby.ListarProveedores</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">8</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-03-12 05:55:50 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:22]"><span>[1.1:22]</span> <span>Validar que el campo lobby es obligatorio</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:23]"><span>[1.2:23]</span> <span>Validar que el campo lobby es obligatorio</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:26]"><span>[2:26]</span> <span>Validar respuesta exitosa cuando el lobby es válido</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:40]"><span>[3:40]</span> <span>Validar tiempo de respuesta menor o igual a 3 segundos</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4.1:78]"><span>[4.1:78]</span> <span>[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4.2:79]"><span>[4.2:79]</span> <span>[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4.3:80]"><span>[4.3:80]</span> <span>[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4.4:81]"><span>[4.4:81]</span> <span>[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4.5:82]"><span>[4.5:82]</span> <span>[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4.6:83]"><span>[4.6:83]</span> <span>[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4.7:84]"><span>[4.7:84]</span> <span>[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4.8:85]"><span>[4.8:85]</span> <span>[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/lobby/ListarProveedores.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Validación del servicio Lobby Filter</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:22]</span>
+                <span class="scenario-name">Validar que el campo lobby es obligatorio</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1314</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">17:55:41.955 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;lobbies/filter&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">55</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.11">{
+  &quot;lobby&quot;: &quot;&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1256</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.17">17:55:42.591 request:
+1 &gt; POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev/lobbies/filter
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 12
+1 &gt; Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lobby&quot;:&quot;&quot;}
+
+17:55:43.311 response time in milliseconds: 680
+1 &lt; 400
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 49
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 12 Mar 2026 22:55:43 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-69b3446f-3547e85e490748ff43cd259d;Parent=256310c157fcf51e;Sampled=0;Lineage=1:84ac5540:0
+1 &lt; x-amzn-RequestId: e6a60cf2-2aa1-441b-b792-b5988b53fc10
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; x-amz-apigw-id: aIehfEN1PHcEGMg=
+1 &lt; Access-Control-Allow-Methods: OPTIONS,POST
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 348d7c18d8ac60e3b6b1679992a9f608.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: LIM50-P4
+1 &lt; X-Amz-Cf-Id: 6Kqrrdl3f5iZ6aCJk_iZP--jTI-ygM33_jMfiPke8VjC4ZvnTRSvTA==
+{&quot;message&quot;:&quot;El parámetro &#39;lobby&#39; no es válido&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:23]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:23]</span>
+                <span class="scenario-name">Validar que el campo lobby es obligatorio</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>614</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:23]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4">17:55:43.351 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;lobbies/filter&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.11">{
+  &quot;lobby&quot;: null
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">613</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.17">17:55:43.362 request:
+1 &gt; POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev/lobbies/filter
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 14
+1 &gt; Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lobby&quot;:null}
+
+17:55:43.960 response time in milliseconds: 598
+1 &lt; 400
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 47
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 12 Mar 2026 22:55:44 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-69b34470-0666434539535cea5fd612eb;Parent=5d802936f313b8ca;Sampled=0;Lineage=1:84ac5540:0
+1 &lt; x-amzn-RequestId: 6962ccd4-d965-4a9b-9ce6-498a0fb0c450
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; x-amz-apigw-id: aIehnHyUvHcEWrw=
+1 &lt; Access-Control-Allow-Methods: OPTIONS,POST
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 2420b43d96bd040d43ee898a9214ab8a.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: LIM50-P4
+1 &lt; X-Amz-Cf-Id: _0uMboUwTtvaegEe49786WfNBOCnvJCNGtpYPGe9WIGUh_WupnZhYg==
+{&quot;message&quot;:&quot;Completar los campos obligatorios&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:26]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:26]</span>
+                <span class="scenario-name">Validar respuesta exitosa cuando el lobby es válido</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1009</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:26]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:55:43.984 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;lobbies/filter&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.29">{
+  &quot;lobby&quot;: &quot;Lobby Todos Los Juegos Desktop&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">990</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">17:55:43.989 request:
+1 &gt; POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev/lobbies/filter
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lobby&quot;:&quot;Lobby Todos Los Juegos Desktop&quot;}
+
+17:55:44.966 response time in milliseconds: 977
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 7602
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 12 Mar 2026 22:55:45 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-69b34471-00c010d76da3ffcd4c381351;Parent=02a29514af2ea9e4;Sampled=0;Lineage=1:84ac5540:0
+1 &lt; x-amzn-RequestId: 96912749-cd07-433f-b569-4d35bdfb097f
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; x-amz-apigw-id: aIehuHMpvHcEPfw=
+1 &lt; Access-Control-Allow-Methods: OPTIONS,POST
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 3e07b77de077db959f12788b2ecb8914.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: LIM50-P4
+1 &lt; X-Amz-Cf-Id: EodpwIZesfP2UVhm43vjZYbLCAFX1b6q3ne93AeAQoLSMXTh_ddDEw==
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Success&quot;,&quot;data&quot;:[{&quot;key&quot;:&quot;paymentMechanics&quot;,&quot;type&quot;:&quot;multiselect&quot;,&quot;order&quot;:1,&quot;items&quot;:[{&quot;key&quot;:&quot;OPT_game_type_anywhere&quot;,&quot;value&quot;:&quot;Anywhere&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_game_type_normal&quot;,&quot;value&quot;:&quot;Normal&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_game_type_ways_megaways&quot;,&quot;value&quot;:&quot;Ways Megaways&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_game_type_cluster&quot;,&quot;value&quot;:&quot;Cluster&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_game_type_crash&quot;,&quot;value&quot;:&quot;Crash&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_game_type_table_games&quot;,&quot;value&quot;:&quot;Table Games&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_game_type_insta_win&quot;,&quot;value&quot;:&quot;Insta Win&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_game_type_bingoslot&quot;,&quot;value&quot;:&quot;Bingoslot&quot;,&quot;enabled&quot;:true}]},{&quot;key&quot;:&quot;providers&quot;,&quot;type&quot;:&quot;multiselect&quot;,&quot;order&quot;:2,&quot;items&quot;:[{&quot;key&quot;:&quot;CT Interactive&quot;,&quot;value&quot;:&quot;CT Interactive&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Pragmatic&quot;,&quot;value&quot;:&quot;Pragmatic&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Red Tiger&quot;,&quot;value&quot;:&quot;Red Tiger&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Bragg (Oryx)&quot;,&quot;value&quot;:&quot;Bragg (Oryx)&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Nolimit city&quot;,&quot;value&quot;:&quot;Nolimit city&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Amusnet&quot;,&quot;value&quot;:&quot;Amusnet&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Big Time Gaming&quot;,&quot;value&quot;:&quot;Big Time Gaming&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Playtech&quot;,&quot;value&quot;:&quot;Playtech&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Greentube&quot;,&quot;value&quot;:&quot;Greentube&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;NetEnt&quot;,&quot;value&quot;:&quot;NetEnt&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Evolution&quot;,&quot;value&quot;:&quot;Evolution&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Games Global (Microgaming)&quot;,&quot;value&quot;:&quot;Games Global (Microgaming)&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Zitro&quot;,&quot;value&quot;:&quot;Zitro&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Wazdan&quot;,&quot;value&quot;:&quot;Wazdan&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Synot&quot;,&quot;value&quot;:&quot;Synot&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Ezugi&quot;,&quot;value&quot;:&quot;Ezugi&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Endorphina&quot;,&quot;value&quot;:&quot;Endorphina&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Hacksaw&quot;,&quot;value&quot;:&quot;Hacksaw&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Playson&quot;,&quot;value&quot;:&quot;Playson&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Spribe&quot;,&quot;value&quot;:&quot;Spribe&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Platipus&quot;,&quot;value&quot;:&quot;Platipus&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Gamomat&quot;,&quot;value&quot;:&quot;Gamomat&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;BGaming&quot;,&quot;value&quot;:&quot;BGaming&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;1x2 Gaming&quot;,&quot;value&quot;:&quot;1x2 Gaming&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Habanero&quot;,&quot;value&quot;:&quot;Habanero&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Booming Games&quot;,&quot;value&quot;:&quot;Booming Games&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Play Digital IGT&quot;,&quot;value&quot;:&quot;Play Digital IGT&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;7777 Gaming&quot;,&quot;value&quot;:&quot;7777 Gaming&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;RubyPlay&quot;,&quot;value&quot;:&quot;RubyPlay&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;3 Oaks&quot;,&quot;value&quot;:&quot;3 Oaks&quot;,&quot;enabled&quot;:true}]},{&quot;key&quot;:&quot;jackpotTypes&quot;,&quot;type&quot;:&quot;multiselect&quot;,&quot;order&quot;:3,&quot;items&quot;:[{&quot;key&quot;:&quot;OPT_jackpot_type_compartido&quot;,&quot;value&quot;:&quot;Compartido&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_jackpot_type_standalone&quot;,&quot;value&quot;:&quot;Standalone&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_jackpot_type_compartido_mundial&quot;,&quot;value&quot;:&quot;Compartido Mundial&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_jackpot_type_compartido_juego&quot;,&quot;value&quot;:&quot;Compartido Juego&quot;,&quot;enabled&quot;:true}]},{&quot;key&quot;:&quot;attractions&quot;,&quot;type&quot;:&quot;multiselect&quot;,&quot;order&quot;:4,&quot;items&quot;:[{&quot;key&quot;:&quot;OPT_atraccion_risk_gamble&quot;,&quot;value&quot;:&quot;Risk Gamble&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_Symbol_Multipliers&quot;,&quot;value&quot;:&quot;Symbol Multipliers&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_compra_atraccion&quot;,&quot;value&quot;:&quot;Compra Atraccion&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_expanding_wild&quot;,&quot;value&quot;:&quot;Expanding Wild&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_random_wilds&quot;,&quot;value&quot;:&quot;Random Wilds&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_wild_multiplicador&quot;,&quot;value&quot;:&quot;Wild Multiplicador&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_simbolos_stack&quot;,&quot;value&quot;:&quot;Simbolos Stack&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_collect&quot;,&quot;value&quot;:&quot;Collect&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_respin&quot;,&quot;value&quot;:&quot;Respin&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_sticky_wild&quot;,&quot;value&quot;:&quot;Sticky Wild&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_multiple_grids&quot;,&quot;value&quot;:&quot;Multiple Grids&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_apuesta_aumentada&quot;,&quot;value&quot;:&quot;Apuesta Aumentada&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_cascada&quot;,&quot;value&quot;:&quot;Cascada&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_colossal_symbols&quot;,&quot;value&quot;:&quot;Colossal Symbols&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_Mystery_Symbols&quot;,&quot;value&quot;:&quot;Mystery Symbols&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_increasing_multipliers&quot;,&quot;value&quot;:&quot;Increasing Multipliers&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_hold_and_win&quot;,&quot;value&quot;:&quot;Hold And Win&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_roaming_wilds&quot;,&quot;value&quot;:&quot;Roaming Wilds&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_expanding_symbol&quot;,&quot;value&quot;:&quot;Expanding Symbol&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_progressive_free_spins&quot;,&quot;value&quot;:&quot;Progressive Free Spins&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_simbolos_altos&quot;,&quot;value&quot;:&quot;Simbolos Altos&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_pago_ambos_sentidos&quot;,&quot;value&quot;:&quot;Pago Ambos Sentidos&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_Expanding_Reels&quot;,&quot;value&quot;:&quot;Expanding Reels&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_wheel_of_fortune&quot;,&quot;value&quot;:&quot;Wheel Of Fortune&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_Compra_Super_Bonus&quot;,&quot;value&quot;:&quot;Compra Super Bonus&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_Feature_Spin&quot;,&quot;value&quot;:&quot;Feature Spin&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_up_symbol&quot;,&quot;value&quot;:&quot;Up Symbol&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_progressive_wilds&quot;,&quot;value&quot;:&quot;Progressive Wilds&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_wild_reel_unlock&quot;,&quot;value&quot;:&quot;Wild Reel Unlock&quot;,&quot;enabled&quot;:true}]},{&quot;key&quot;:&quot;themes&quot;,&quot;type&quot;:&quot;multiselect&quot;,&quot;order&quot;:5,&quot;items&quot;:[{&quot;key&quot;:&quot;OPT_theme_animales&quot;,&quot;value&quot;:&quot;Animales&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_aventura&quot;,&quot;value&quot;:&quot;Aventura&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_oriental&quot;,&quot;value&quot;:&quot;Oriental&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_historicos&quot;,&quot;value&quot;:&quot;Historicos&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_mitologia&quot;,&quot;value&quot;:&quot;Mitologia&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_vaquero&quot;,&quot;value&quot;:&quot;Vaquero&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_buffalo&quot;,&quot;value&quot;:&quot;Buffalo&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_frutas&quot;,&quot;value&quot;:&quot;Frutas&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_festividades&quot;,&quot;value&quot;:&quot;Festividades&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_gemas&quot;,&quot;value&quot;:&quot;Gemas&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_dioses&quot;,&quot;value&quot;:&quot;Dioses&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_terror&quot;,&quot;value&quot;:&quot;Terror&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_dulce&quot;,&quot;value&quot;:&quot;Dulce&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_egipto&quot;,&quot;value&quot;:&quot;Egipto&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_tesoros&quot;,&quot;value&quot;:&quot;Tesoros&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_fiesta&quot;,&quot;value&quot;:&quot;Fiesta&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_dragones&quot;,&quot;value&quot;:&quot;Dragones&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_magia&quot;,&quot;value&quot;:&quot;Magia&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_irlandes&quot;,&quot;value&quot;:&quot;Irlandes&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_joker&quot;,&quot;value&quot;:&quot;Joker&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_deportes&quot;,&quot;value&quot;:&quot;Deportes&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_casino_clasico&quot;,&quot;value&quot;:&quot;Casino Clasico&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_pesca&quot;,&quot;value&quot;:&quot;Pesca&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_espacial&quot;,&quot;value&quot;:&quot;Espacial&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_tierno&quot;,&quot;value&quot;:&quot;Tierno&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_mina&quot;,&quot;value&quot;:&quot;Mina&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_animados&quot;,&quot;value&quot;:&quot;Animados&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_piratas&quot;,&quot;value&quot;:&quot;Piratas&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_batallas&quot;,&quot;value&quot;:&quot;Batallas&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_dados&quot;,&quot;value&quot;:&quot;Dados&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_futuro&quot;,&quot;value&quot;:&quot;Futuro&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_policias&quot;,&quot;value&quot;:&quot;Policias&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_arcade&quot;,&quot;value&quot;:&quot;Arcade&quot;,&quot;enabled&quot;:true}]},{&quot;key&quot;:&quot;bettingRange&quot;,&quot;type&quot;:&quot;range&quot;,&quot;order&quot;:6,&quot;items&quot;:{&quot;min&quot;:0.02,&quot;max&quot;:15000}},{&quot;key&quot;:&quot;volatilities&quot;,&quot;type&quot;:&quot;multiselect&quot;,&quot;order&quot;:7,&quot;items&quot;:[{&quot;key&quot;:&quot;OPT_vol_high&quot;,&quot;value&quot;:&quot;High&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_vol_medium&quot;,&quot;value&quot;:&quot;Medium&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_vol_very_high&quot;,&quot;value&quot;:&quot;Very High&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_vol_low&quot;,&quot;value&quot;:&quot;Low&quot;,&quot;enabled&quot;:true}]}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.success == true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:40]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:40]</span>
+                <span class="scenario-name">Validar tiempo de respuesta menor o igual a 3 segundos</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>877</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:40]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">17:55:45.002 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;lobbies/filter&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.43">{
+  &quot;lobby&quot;: &quot;Lobby Todos Los Juegos Desktop&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">867</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.49">17:55:45.009 request:
+1 &gt; POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev/lobbies/filter
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lobby&quot;:&quot;Lobby Todos Los Juegos Desktop&quot;}
+
+17:55:45.871 response time in milliseconds: 860
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 7602
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 12 Mar 2026 22:55:46 GMT
+1 &lt; X-Amzn-Trace-Id: Root=1-69b34472-7bf2bf3b6bf172e25ac9a037;Parent=4d018cb392fe23f6;Sampled=0;Lineage=1:84ac5540:0
+1 &lt; x-amzn-RequestId: d81a997d-884d-44bb-903f-3306de033717
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Headers: *
+1 &lt; x-amz-apigw-id: aIeh4GebPHcEMyg=
+1 &lt; Access-Control-Allow-Methods: OPTIONS,POST
+1 &lt; X-Cache: Miss from cloudfront
+1 &lt; Via: 1.1 eec3bf841ac636f9a2400eb19e13aac0.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: LIM50-P4
+1 &lt; X-Amz-Cf-Id: 74rTU7unNhw3VnDLzm5XhFJjFsLx4BunyE5f5P50j6jZSX05LCPSmw==
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Success&quot;,&quot;data&quot;:[{&quot;key&quot;:&quot;paymentMechanics&quot;,&quot;type&quot;:&quot;multiselect&quot;,&quot;order&quot;:1,&quot;items&quot;:[{&quot;key&quot;:&quot;OPT_game_type_anywhere&quot;,&quot;value&quot;:&quot;Anywhere&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_game_type_normal&quot;,&quot;value&quot;:&quot;Normal&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_game_type_ways_megaways&quot;,&quot;value&quot;:&quot;Ways Megaways&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_game_type_cluster&quot;,&quot;value&quot;:&quot;Cluster&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_game_type_crash&quot;,&quot;value&quot;:&quot;Crash&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_game_type_table_games&quot;,&quot;value&quot;:&quot;Table Games&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_game_type_insta_win&quot;,&quot;value&quot;:&quot;Insta Win&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_game_type_bingoslot&quot;,&quot;value&quot;:&quot;Bingoslot&quot;,&quot;enabled&quot;:true}]},{&quot;key&quot;:&quot;providers&quot;,&quot;type&quot;:&quot;multiselect&quot;,&quot;order&quot;:2,&quot;items&quot;:[{&quot;key&quot;:&quot;CT Interactive&quot;,&quot;value&quot;:&quot;CT Interactive&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Pragmatic&quot;,&quot;value&quot;:&quot;Pragmatic&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Red Tiger&quot;,&quot;value&quot;:&quot;Red Tiger&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Bragg (Oryx)&quot;,&quot;value&quot;:&quot;Bragg (Oryx)&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Nolimit city&quot;,&quot;value&quot;:&quot;Nolimit city&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Amusnet&quot;,&quot;value&quot;:&quot;Amusnet&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Big Time Gaming&quot;,&quot;value&quot;:&quot;Big Time Gaming&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Playtech&quot;,&quot;value&quot;:&quot;Playtech&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Greentube&quot;,&quot;value&quot;:&quot;Greentube&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;NetEnt&quot;,&quot;value&quot;:&quot;NetEnt&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Evolution&quot;,&quot;value&quot;:&quot;Evolution&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Games Global (Microgaming)&quot;,&quot;value&quot;:&quot;Games Global (Microgaming)&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Zitro&quot;,&quot;value&quot;:&quot;Zitro&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Wazdan&quot;,&quot;value&quot;:&quot;Wazdan&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Synot&quot;,&quot;value&quot;:&quot;Synot&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Ezugi&quot;,&quot;value&quot;:&quot;Ezugi&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Endorphina&quot;,&quot;value&quot;:&quot;Endorphina&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Hacksaw&quot;,&quot;value&quot;:&quot;Hacksaw&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Playson&quot;,&quot;value&quot;:&quot;Playson&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Spribe&quot;,&quot;value&quot;:&quot;Spribe&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Platipus&quot;,&quot;value&quot;:&quot;Platipus&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Gamomat&quot;,&quot;value&quot;:&quot;Gamomat&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;BGaming&quot;,&quot;value&quot;:&quot;BGaming&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;1x2 Gaming&quot;,&quot;value&quot;:&quot;1x2 Gaming&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Habanero&quot;,&quot;value&quot;:&quot;Habanero&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Booming Games&quot;,&quot;value&quot;:&quot;Booming Games&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;Play Digital IGT&quot;,&quot;value&quot;:&quot;Play Digital IGT&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;7777 Gaming&quot;,&quot;value&quot;:&quot;7777 Gaming&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;RubyPlay&quot;,&quot;value&quot;:&quot;RubyPlay&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;3 Oaks&quot;,&quot;value&quot;:&quot;3 Oaks&quot;,&quot;enabled&quot;:true}]},{&quot;key&quot;:&quot;jackpotTypes&quot;,&quot;type&quot;:&quot;multiselect&quot;,&quot;order&quot;:3,&quot;items&quot;:[{&quot;key&quot;:&quot;OPT_jackpot_type_compartido&quot;,&quot;value&quot;:&quot;Compartido&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_jackpot_type_standalone&quot;,&quot;value&quot;:&quot;Standalone&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_jackpot_type_compartido_mundial&quot;,&quot;value&quot;:&quot;Compartido Mundial&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_jackpot_type_compartido_juego&quot;,&quot;value&quot;:&quot;Compartido Juego&quot;,&quot;enabled&quot;:true}]},{&quot;key&quot;:&quot;attractions&quot;,&quot;type&quot;:&quot;multiselect&quot;,&quot;order&quot;:4,&quot;items&quot;:[{&quot;key&quot;:&quot;OPT_atraccion_risk_gamble&quot;,&quot;value&quot;:&quot;Risk Gamble&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_Symbol_Multipliers&quot;,&quot;value&quot;:&quot;Symbol Multipliers&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_compra_atraccion&quot;,&quot;value&quot;:&quot;Compra Atraccion&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_expanding_wild&quot;,&quot;value&quot;:&quot;Expanding Wild&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_random_wilds&quot;,&quot;value&quot;:&quot;Random Wilds&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_wild_multiplicador&quot;,&quot;value&quot;:&quot;Wild Multiplicador&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_simbolos_stack&quot;,&quot;value&quot;:&quot;Simbolos Stack&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_collect&quot;,&quot;value&quot;:&quot;Collect&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_respin&quot;,&quot;value&quot;:&quot;Respin&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_sticky_wild&quot;,&quot;value&quot;:&quot;Sticky Wild&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_multiple_grids&quot;,&quot;value&quot;:&quot;Multiple Grids&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_apuesta_aumentada&quot;,&quot;value&quot;:&quot;Apuesta Aumentada&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_cascada&quot;,&quot;value&quot;:&quot;Cascada&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_colossal_symbols&quot;,&quot;value&quot;:&quot;Colossal Symbols&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_Mystery_Symbols&quot;,&quot;value&quot;:&quot;Mystery Symbols&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_increasing_multipliers&quot;,&quot;value&quot;:&quot;Increasing Multipliers&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_hold_and_win&quot;,&quot;value&quot;:&quot;Hold And Win&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_roaming_wilds&quot;,&quot;value&quot;:&quot;Roaming Wilds&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_expanding_symbol&quot;,&quot;value&quot;:&quot;Expanding Symbol&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_progressive_free_spins&quot;,&quot;value&quot;:&quot;Progressive Free Spins&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_simbolos_altos&quot;,&quot;value&quot;:&quot;Simbolos Altos&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_pago_ambos_sentidos&quot;,&quot;value&quot;:&quot;Pago Ambos Sentidos&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_Expanding_Reels&quot;,&quot;value&quot;:&quot;Expanding Reels&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_wheel_of_fortune&quot;,&quot;value&quot;:&quot;Wheel Of Fortune&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_Compra_Super_Bonus&quot;,&quot;value&quot;:&quot;Compra Super Bonus&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_Feature_Spin&quot;,&quot;value&quot;:&quot;Feature Spin&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_up_symbol&quot;,&quot;value&quot;:&quot;Up Symbol&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_progressive_wilds&quot;,&quot;value&quot;:&quot;Progressive Wilds&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_atraccion_wild_reel_unlock&quot;,&quot;value&quot;:&quot;Wild Reel Unlock&quot;,&quot;enabled&quot;:true}]},{&quot;key&quot;:&quot;themes&quot;,&quot;type&quot;:&quot;multiselect&quot;,&quot;order&quot;:5,&quot;items&quot;:[{&quot;key&quot;:&quot;OPT_theme_animales&quot;,&quot;value&quot;:&quot;Animales&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_aventura&quot;,&quot;value&quot;:&quot;Aventura&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_oriental&quot;,&quot;value&quot;:&quot;Oriental&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_historicos&quot;,&quot;value&quot;:&quot;Historicos&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_mitologia&quot;,&quot;value&quot;:&quot;Mitologia&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_vaquero&quot;,&quot;value&quot;:&quot;Vaquero&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_buffalo&quot;,&quot;value&quot;:&quot;Buffalo&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_frutas&quot;,&quot;value&quot;:&quot;Frutas&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_festividades&quot;,&quot;value&quot;:&quot;Festividades&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_gemas&quot;,&quot;value&quot;:&quot;Gemas&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_dioses&quot;,&quot;value&quot;:&quot;Dioses&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_terror&quot;,&quot;value&quot;:&quot;Terror&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_dulce&quot;,&quot;value&quot;:&quot;Dulce&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_egipto&quot;,&quot;value&quot;:&quot;Egipto&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_tesoros&quot;,&quot;value&quot;:&quot;Tesoros&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_fiesta&quot;,&quot;value&quot;:&quot;Fiesta&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_dragones&quot;,&quot;value&quot;:&quot;Dragones&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_magia&quot;,&quot;value&quot;:&quot;Magia&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_irlandes&quot;,&quot;value&quot;:&quot;Irlandes&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_joker&quot;,&quot;value&quot;:&quot;Joker&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_deportes&quot;,&quot;value&quot;:&quot;Deportes&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_casino_clasico&quot;,&quot;value&quot;:&quot;Casino Clasico&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_pesca&quot;,&quot;value&quot;:&quot;Pesca&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_espacial&quot;,&quot;value&quot;:&quot;Espacial&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_tierno&quot;,&quot;value&quot;:&quot;Tierno&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_mina&quot;,&quot;value&quot;:&quot;Mina&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_animados&quot;,&quot;value&quot;:&quot;Animados&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_piratas&quot;,&quot;value&quot;:&quot;Piratas&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_batallas&quot;,&quot;value&quot;:&quot;Batallas&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_dados&quot;,&quot;value&quot;:&quot;Dados&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_futuro&quot;,&quot;value&quot;:&quot;Futuro&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_policias&quot;,&quot;value&quot;:&quot;Policias&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_theme_arcade&quot;,&quot;value&quot;:&quot;Arcade&quot;,&quot;enabled&quot;:true}]},{&quot;key&quot;:&quot;bettingRange&quot;,&quot;type&quot;:&quot;range&quot;,&quot;order&quot;:6,&quot;items&quot;:{&quot;min&quot;:0.02,&quot;max&quot;:15000}},{&quot;key&quot;:&quot;volatilities&quot;,&quot;type&quot;:&quot;multiselect&quot;,&quot;order&quot;:7,&quot;items&quot;:[{&quot;key&quot;:&quot;OPT_vol_high&quot;,&quot;value&quot;:&quot;High&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_vol_medium&quot;,&quot;value&quot;:&quot;Medium&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_vol_very_high&quot;,&quot;value&quot;:&quot;Very High&quot;,&quot;enabled&quot;:true},{&quot;key&quot;:&quot;OPT_vol_low&quot;,&quot;value&quot;:&quot;Low&quot;,&quot;enabled&quot;:true}]}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert responseTime &lt;= 3000</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.1:78]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.1:78]</span>
+                <span class="scenario-name">[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>261</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.1:78]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.1:78]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4">17:55:45.895 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.1:78]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseBettingRangeItemsSchema =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.54">{
+  min: &#39;#number&#39;,
+  max: &#39;#number&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request { lobby: &#39;Lobby Todos Los Juegos Desktop&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">254</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.63">17:55:45.900 request:
+1 &gt; POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lobby&quot;:&quot;Lobby Todos Los Juegos Desktop&quot;}
+
+17:55:46.136 response time in milliseconds: 236
+1 &lt; 403
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 42
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 12 Mar 2026 22:55:46 GMT
+1 &lt; x-amz-apigw-id: aIeh9ExEvHcEipw=
+1 &lt; x-amzn-RequestId: c0490ced-7231-4ca6-9dff-858b97143c94
+1 &lt; x-amzn-ErrorType: MissingAuthenticationTokenException
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 91618874d64f6094c008a8273d1ad22a.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: LIM50-P4
+1 &lt; X-Amz-Cf-Id: iq-nDxhRnIFdgEuGxpaw2DqAU0REngLsRjC1I9yQx7vAnLaQbebHvQ==
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.64">
+      <div class="step-ref failed">64</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.64">17:55:46.156 classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 236, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+classpath:features/lobby/ListarProveedores.feature:64
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.65">
+      <div class="step-ref skipped">65</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.message == &quot;Success&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.66">
+      <div class="step-ref skipped">66</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>assert response.data.length &gt;= 1</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.67">
+      <div class="step-ref skipped">67</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match $response.data[*].key contains &quot;bettingRange&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.69">
+      <div class="step-ref skipped">69</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRangeList = karate.filter(response.data, function(x){ return x.key == &#39;bettingRange&#39; })</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.71">
+      <div class="step-ref skipped">71</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRange = bettingRangeList[0]</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.73">
+      <div class="step-ref skipped">73</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.type == &quot;range&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.74">
+      <div class="step-ref skipped">74</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.items == responseBettingRangeItemsSchema</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.2:79]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.2:79]</span>
+                <span class="scenario-name">[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>241</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.2:79]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.2:79]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4">17:55:46.182 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.2:79]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseBettingRangeItemsSchema =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="2.54">{
+  min: &#39;#number&#39;,
+  max: &#39;#number&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request { lobby: &#39;Lobby Progresivos Desktop&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">240</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.63">17:55:46.191 request:
+1 &gt; POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 37
+1 &gt; Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lobby&quot;:&quot;Lobby Progresivos Desktop&quot;}
+
+17:55:46.424 response time in milliseconds: 233
+1 &lt; 403
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 42
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 12 Mar 2026 22:55:46 GMT
+1 &lt; x-amz-apigw-id: aIeiAFRPPHcEpEA=
+1 &lt; x-amzn-RequestId: 2ecdd8d2-a543-4c7c-9bde-70577cbd5f74
+1 &lt; x-amzn-ErrorType: MissingAuthenticationTokenException
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 4828f70366d72db0b523f619bb7738fc.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: LIM50-P4
+1 &lt; X-Amz-Cf-Id: EGAhjHMqVFopMVD5_Ij1PxCBZhzrIMz5jhtLo9K1mG0Fj9iBjKwD3g==
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.64">
+      <div class="step-ref failed">64</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.64">17:55:46.424 classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 233, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+classpath:features/lobby/ListarProveedores.feature:64
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.65">
+      <div class="step-ref skipped">65</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.message == &quot;Success&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.66">
+      <div class="step-ref skipped">66</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>assert response.data.length &gt;= 1</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.67">
+      <div class="step-ref skipped">67</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match $response.data[*].key contains &quot;bettingRange&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.69">
+      <div class="step-ref skipped">69</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRangeList = karate.filter(response.data, function(x){ return x.key == &#39;bettingRange&#39; })</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.71">
+      <div class="step-ref skipped">71</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRange = bettingRangeList[0]</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.73">
+      <div class="step-ref skipped">73</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.type == &quot;range&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.74">
+      <div class="step-ref skipped">74</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.items == responseBettingRangeItemsSchema</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.3:80]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.3:80]</span>
+                <span class="scenario-name">[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>589</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.3:80]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.3:80]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.4">17:55:46.438 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.3:80]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseBettingRangeItemsSchema =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="3.54">{
+  min: &#39;#number&#39;,
+  max: &#39;#number&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request { lobby: &#39;Lobby Clasicas Desktop&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">588</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.63">17:55:46.444 request:
+1 &gt; POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 34
+1 &gt; Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lobby&quot;:&quot;Lobby Clasicas Desktop&quot;}
+
+17:55:47.024 response time in milliseconds: 580
+1 &lt; 403
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 42
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 12 Mar 2026 22:55:47 GMT
+1 &lt; x-amz-apigw-id: aIeiGHPovHcEq7w=
+1 &lt; x-amzn-RequestId: cd498c2e-a54b-4a02-b980-f9f7f5801f2d
+1 &lt; x-amzn-ErrorType: MissingAuthenticationTokenException
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 4b41c6e76d8872ab0e8baee30184397a.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: LIM50-P4
+1 &lt; X-Amz-Cf-Id: k8_QdWeNYZkcNBnO5gBP6iNS2kYhOUDttNkK8B9plca-PFZOh1NuaA==
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.64">
+      <div class="step-ref failed">64</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.64">17:55:47.030 classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 580, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+classpath:features/lobby/ListarProveedores.feature:64
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.65">
+      <div class="step-ref skipped">65</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.message == &quot;Success&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.66">
+      <div class="step-ref skipped">66</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>assert response.data.length &gt;= 1</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.67">
+      <div class="step-ref skipped">67</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match $response.data[*].key contains &quot;bettingRange&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.69">
+      <div class="step-ref skipped">69</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRangeList = karate.filter(response.data, function(x){ return x.key == &#39;bettingRange&#39; })</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.71">
+      <div class="step-ref skipped">71</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRange = bettingRangeList[0]</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.73">
+      <div class="step-ref skipped">73</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.type == &quot;range&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.74">
+      <div class="step-ref skipped">74</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.items == responseBettingRangeItemsSchema</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.4:81]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.4:81]</span>
+                <span class="scenario-name">[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>598</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.4:81]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.4:81]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.4">17:55:47.038 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.4:81]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseBettingRangeItemsSchema =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="4.54">{
+  min: &#39;#number&#39;,
+  max: &#39;#number&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request { lobby: &#39;Lobby Compra Bonus Desktop&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">598</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.63">17:55:47.041 request:
+1 &gt; POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 38
+1 &gt; Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lobby&quot;:&quot;Lobby Compra Bonus Desktop&quot;}
+
+17:55:47.638 response time in milliseconds: 596
+1 &lt; 403
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 42
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 12 Mar 2026 22:55:48 GMT
+1 &lt; x-amz-apigw-id: aIeiMG4QPHcEJUA=
+1 &lt; x-amzn-RequestId: 6259e322-68aa-4db7-9d71-a961b32f1abe
+1 &lt; x-amzn-ErrorType: MissingAuthenticationTokenException
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 1a8f4e7ec86ac95ada5cd8e1bafd669e.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: LIM50-P4
+1 &lt; X-Amz-Cf-Id: owNChcDObRsBq9zF4g-IFjg7FtJSiJ8NS_KEinrTuUPdSGSMOI5e-w==
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.64">
+      <div class="step-ref failed">64</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.64">17:55:47.638 classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 596, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+classpath:features/lobby/ListarProveedores.feature:64
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.65">
+      <div class="step-ref skipped">65</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.message == &quot;Success&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.66">
+      <div class="step-ref skipped">66</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>assert response.data.length &gt;= 1</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.67">
+      <div class="step-ref skipped">67</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match $response.data[*].key contains &quot;bettingRange&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.69">
+      <div class="step-ref skipped">69</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRangeList = karate.filter(response.data, function(x){ return x.key == &#39;bettingRange&#39; })</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.71">
+      <div class="step-ref skipped">71</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRange = bettingRangeList[0]</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.73">
+      <div class="step-ref skipped">73</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.type == &quot;range&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.74">
+      <div class="step-ref skipped">74</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.items == responseBettingRangeItemsSchema</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.5:82]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.5:82]</span>
+                <span class="scenario-name">[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>619</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.5:82]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.5:82]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.4">17:55:47.646 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.5:82]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseBettingRangeItemsSchema =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="5.54">{
+  min: &#39;#number&#39;,
+  max: &#39;#number&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request { lobby: &#39;Lobby High Rollers Desktop&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">618</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.63">17:55:47.651 request:
+1 &gt; POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 38
+1 &gt; Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lobby&quot;:&quot;Lobby High Rollers Desktop&quot;}
+
+17:55:48.264 response time in milliseconds: 613
+1 &lt; 403
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 42
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 12 Mar 2026 22:55:48 GMT
+1 &lt; x-amz-apigw-id: aIeiSHIiPHcEUOg=
+1 &lt; x-amzn-RequestId: 7eb534eb-0d05-4f21-aa8a-27f2f4e2d272
+1 &lt; x-amzn-ErrorType: MissingAuthenticationTokenException
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 08a337d4c41835bb1a388ee0311fd0aa.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: LIM50-P4
+1 &lt; X-Amz-Cf-Id: WMiWjQrbpuDnjRU-PuULWkmTIUJXxigYhkSRzm43f39GafNuiGthHg==
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.64">
+      <div class="step-ref failed">64</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.64">17:55:48.264 classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 613, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+classpath:features/lobby/ListarProveedores.feature:64
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.65">
+      <div class="step-ref skipped">65</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.message == &quot;Success&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.66">
+      <div class="step-ref skipped">66</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>assert response.data.length &gt;= 1</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.67">
+      <div class="step-ref skipped">67</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match $response.data[*].key contains &quot;bettingRange&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.69">
+      <div class="step-ref skipped">69</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRangeList = karate.filter(response.data, function(x){ return x.key == &#39;bettingRange&#39; })</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.71">
+      <div class="step-ref skipped">71</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRange = bettingRangeList[0]</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.73">
+      <div class="step-ref skipped">73</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.type == &quot;range&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.74">
+      <div class="step-ref skipped">74</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.items == responseBettingRangeItemsSchema</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.6:83]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.6:83]</span>
+                <span class="scenario-name">[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>608</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.6:83]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.6:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="6.4">17:55:48.271 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.6:83]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseBettingRangeItemsSchema =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="6.54">{
+  min: &#39;#number&#39;,
+  max: &#39;#number&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request { lobby: &#39;Lobby Nuevos Juegos Desktop&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">608</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="6.63">17:55:48.271 request:
+1 &gt; POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lobby&quot;:&quot;Lobby Nuevos Juegos Desktop&quot;}
+
+17:55:48.886 response time in milliseconds: 611
+1 &lt; 403
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 42
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 12 Mar 2026 22:55:49 GMT
+1 &lt; x-amz-apigw-id: aIeiZECGPHcEcmw=
+1 &lt; x-amzn-RequestId: d8f1a756-3e9f-425f-a0e1-03eb46a2d3d8
+1 &lt; x-amzn-ErrorType: MissingAuthenticationTokenException
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 abf583d7b5055f9a34a4ee0458154026.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: LIM50-P4
+1 &lt; X-Amz-Cf-Id: 0vFwwowKiR-QNsdZOqpS_dGzw0xy8zhRMEAeqCn2fwPadZlAZpV9Yg==
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.64">
+      <div class="step-ref failed">64</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="6.64">17:55:48.886 classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 611, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+classpath:features/lobby/ListarProveedores.feature:64
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.65">
+      <div class="step-ref skipped">65</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.message == &quot;Success&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.66">
+      <div class="step-ref skipped">66</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>assert response.data.length &gt;= 1</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.67">
+      <div class="step-ref skipped">67</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match $response.data[*].key contains &quot;bettingRange&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.69">
+      <div class="step-ref skipped">69</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRangeList = karate.filter(response.data, function(x){ return x.key == &#39;bettingRange&#39; })</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.71">
+      <div class="step-ref skipped">71</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRange = bettingRangeList[0]</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.73">
+      <div class="step-ref skipped">73</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.type == &quot;range&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="6.74">
+      <div class="step-ref skipped">74</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.items == responseBettingRangeItemsSchema</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.7:84]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.7:84]</span>
+                <span class="scenario-name">[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>595</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.7:84]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.7:84]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="7.4">17:55:48.896 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.7:84]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseBettingRangeItemsSchema =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="7.54">{
+  min: &#39;#number&#39;,
+  max: &#39;#number&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request { lobby: &#39;Lobby Mas Jugados Desktop&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">595</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="7.63">17:55:48.900 request:
+1 &gt; POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 37
+1 &gt; Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lobby&quot;:&quot;Lobby Mas Jugados Desktop&quot;}
+
+17:55:49.491 response time in milliseconds: 588
+1 &lt; 403
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 42
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 12 Mar 2026 22:55:49 GMT
+1 &lt; x-amz-apigw-id: aIeifFhePHcEMHA=
+1 &lt; x-amzn-RequestId: 20927228-ec51-4f65-b43d-3f8b295673a9
+1 &lt; x-amzn-ErrorType: MissingAuthenticationTokenException
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 37a8e7c8f6e0ef373feaddfdb44a7d14.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: LIM50-P4
+1 &lt; X-Amz-Cf-Id: yJd0H-lTu70fksdR0S586Js-nsFNK99xVH_wSBYU4X2-o_dqAeeGSw==
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.64">
+      <div class="step-ref failed">64</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="7.64">17:55:49.491 classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 588, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+classpath:features/lobby/ListarProveedores.feature:64
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.65">
+      <div class="step-ref skipped">65</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.message == &quot;Success&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.66">
+      <div class="step-ref skipped">66</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>assert response.data.length &gt;= 1</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.67">
+      <div class="step-ref skipped">67</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match $response.data[*].key contains &quot;bettingRange&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.69">
+      <div class="step-ref skipped">69</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRangeList = karate.filter(response.data, function(x){ return x.key == &#39;bettingRange&#39; })</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.71">
+      <div class="step-ref skipped">71</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRange = bettingRangeList[0]</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.73">
+      <div class="step-ref skipped">73</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.type == &quot;range&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="7.74">
+      <div class="step-ref skipped">74</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.items == responseBettingRangeItemsSchema</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.8:85]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.8:85]</span>
+                <span class="scenario-name">[102734] Validar envio de atributo &quot;lobby&quot; como valor de lobby existente</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>588</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.8:85]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.8:85]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="8.4">17:55:49.495 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.8:85]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseBettingRangeItemsSchema =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="8.54">{
+  min: &#39;#number&#39;,
+  max: &#39;#number&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request { lobby: &#39;cineDesktop&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">587</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="8.63">17:55:49.505 request:
+1 &gt; POST https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 23
+1 &gt; Host: c03bd4ncki.execute-api.us-west-2.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lobby&quot;:&quot;cineDesktop&quot;}
+
+17:55:50.086 response time in milliseconds: 581
+1 &lt; 403
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 42
+1 &lt; Connection: keep-alive
+1 &lt; Date: Thu, 12 Mar 2026 22:55:50 GMT
+1 &lt; x-amz-apigw-id: aIeilELXvHcEP8w=
+1 &lt; x-amzn-RequestId: 1c7030d7-803b-40f3-9f23-16fc005d7af2
+1 &lt; x-amzn-ErrorType: MissingAuthenticationTokenException
+1 &lt; X-Cache: Error from cloudfront
+1 &lt; Via: 1.1 ac7fd017999b6d571e9b83857fbce978.cloudfront.net (CloudFront)
+1 &lt; X-Amz-Cf-Pop: LIM50-P4
+1 &lt; X-Amz-Cf-Id: 2ynJnEcPmF0gtt_RCxEvTShlubtoQ3Y5pw81m1Dwd_ljEVS9OOn8zg==
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.64">
+      <div class="step-ref failed">64</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="8.64">17:55:50.086 classpath:features/lobby/ListarProveedores.feature:64
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 581, url: https://c03bd4ncki.execute-api.us-west-2.amazonaws.com/dev, response: 
+{&quot;message&quot;:&quot;Missing Authentication Token&quot;}
+classpath:features/lobby/ListarProveedores.feature:64
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.65">
+      <div class="step-ref skipped">65</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response.message == &quot;Success&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.66">
+      <div class="step-ref skipped">66</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>assert response.data.length &gt;= 1</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.67">
+      <div class="step-ref skipped">67</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match $response.data[*].key contains &quot;bettingRange&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.69">
+      <div class="step-ref skipped">69</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRangeList = karate.filter(response.data, function(x){ return x.key == &#39;bettingRange&#39; })</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.71">
+      <div class="step-ref skipped">71</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def bettingRange = bettingRangeList[0]</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.73">
+      <div class="step-ref skipped">73</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.type == &quot;range&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="8.74">
+      <div class="step-ref skipped">74</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match bettingRange.items == responseBettingRangeItemsSchema</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
